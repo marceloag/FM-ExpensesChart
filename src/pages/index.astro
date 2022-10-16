@@ -17,8 +17,8 @@ import ExpensesChart from '../components/ExpensesChart';
     <title>Expenses Chart by @marceloag</title>
   </head>
   <body class="bg-cream flex justify-center items-center min-h-screen">
-    <main class="lg:w-4/12 w- w-2/4 flex flex-col gap-5">
-      <header class="bg-softred rounded-lg p-6 flex flex-row justify-between">
+    <main class="lg:w-4/12 md:6/12 w-11/12 flex flex-col gap-5">
+      <header class="bg-softred rounded-2xl p-6 flex flex-row justify-between">
         <div class="flex flex-col">
           <h4 class="text-white font-medium">My balance</h4>
           <span class="text-white text-2xl">$921.48</span>
@@ -40,9 +40,9 @@ import ExpensesChart from '../components/ExpensesChart';
           </svg>
         </figure>
       </header>
-
-      <div class="bg-paleorange rounded-lg p-6 shadow-xl">
-        <h1 class="text-2xl font-bold">Spending - Last 7 days</h1>
+      <!-- Chart -->
+      <div class="bg-paleorange rounded-2xl p-6 shadow-xl">
+        <h1 class="text-2xl font-bold text-darkbrown">Spending - Last 7 days</h1>
         <!-- Chart -->
         <section class="my-5">
           <ExpensesChart client:load />
@@ -61,14 +61,5 @@ import ExpensesChart from '../components/ExpensesChart';
         </section>
       </div>
     </main>
-
-    <!-- 
-        
-
-        Total this month
-        $478.33
-
-
-     -->
   </body>
 </html>
