@@ -1,4 +1,4 @@
-import Chart from 'chart.js/auto';
+import Chart from 'chart.js/auto/auto.esm';
 import { Bar } from 'react-chartjs-2';
 
 export const options = {
